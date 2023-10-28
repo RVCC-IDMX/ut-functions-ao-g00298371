@@ -188,6 +188,7 @@ const store = {
    * @method getTotalValue
    * @return {number} totalPrice - the total price of the items in the store
    * must use the reduce() array method
+   *
    */
   getTotalValue() {
     return this.inventory.reduce((total, item) => total + item.price * item.quantity, 0);
